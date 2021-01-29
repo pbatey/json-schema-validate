@@ -109,15 +109,16 @@ is provided as a string.
 
 _defined in **validate.js**_
 
-|   |   |   |
-|---|---|---|
-| **Parameters**    | **Name** | **Description** |
-| `{string|object}` | json   | JSON to validate. A string will be parsed as JSON.
-| `{object}`        | schema | A JSON-Schema
-| `{boolean}`       | strict | If set, _schema_ will be adjusted to ban unknown properties
-| `{boolean}`       | strict | _Optional._ An Ajv instance. Will use a vanilla instance w/ ajvformat if not provided.
-| **Returns** |**Name** |**Description** |
-| `{array|null}` | errors| An array of Ajv errors decorated with a pointer field from json-source-map
+| Parameters         | Name   | Description |
+|--------------------|--------|-------------|
+| `{string\|object}` | json   | JSON to validate. A string will be parsed as JSON.
+| `{object}`         | schema | A JSON-Schema
+| `{boolean}`        | strict | If set, _schema_ will be adjusted to ban unknown properties
+| `{boolean}`        | strict | _Optional._ An Ajv instance. Will use a vanilla instance w/ ajvformat if not provided.
+
+| Returns         | Description |
+|-----------------|-------------|
+| `{array\|null}` | An array of Ajv errors decorated with a pointer field from json-source-map
 
 #### banUnknownProperties(schema)
 
@@ -127,9 +128,10 @@ Returns a shallow copy of the schema with shallow copy of nodes that have been m
 
 _defined in **banUnknownProperties.js**_
 
-|   |   |   |
-|---|---|---|
-| **Parameters**    | **Name** | **Description** |
-| `{object}`        | schema | A JSON-Schema
-| **Returns** |**Name** |**Description** |
-| `{object}` | adjustedSchema | An adjusted version of the schema that sets additionalProperties to false
+| Parameters         | Name   | Description |
+|--------------------|--------|-------------|
+| `{object}`         | schema | A JSON-Schema
+
+| Returns         | Description |
+|-----------------|-------------|
+| `{object}`      | An adjusted version of the schema that sets additionalProperties to false
