@@ -1,0 +1,10 @@
+{
+  "name": "Phil",
+  "pets": [
+    { "name": "Allie", "timestamp": "2021-01-28T22:01:44Z" },
+    { "name": "Bently", "timestamp": "2021-01-28T22:01:44Z" },
+    { "name": "Dora", "timestamp": "2021-01-28T22:01:44Z" },
+    { "name": "Duke", "timestamp": "2021-01-28T22:01:44Z" }
+  ],
+  "timestamp": "2021-01-28T22:01:44Z"
+}
