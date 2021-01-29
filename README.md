@@ -114,7 +114,7 @@ _defined in **validate.js**_
 | **Parameters**    | **Name** | **Description** |
 | `{string|object}` | json   | JSON to validate. A string will be parsed as JSON.
 | `{object}`        | schema | A JSON-Schema
-| `{boolean}`       | strict | A JSON-Schema
+| `{boolean}`       | strict | If set, _schema_ will be adjusted to ban unknown properties
 | `{boolean}`       | strict | _Optional._ An Ajv instance. Will use a vanilla instance w/ ajvformat if not provided.
 | **Returns** |**Name** |**Description** |
 | `{array|null}` | errors| An array of Ajv errors decorated with a pointer field from json-source-map
